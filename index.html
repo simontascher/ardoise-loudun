@@ -7,7 +7,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-
+ 
   :root {
     --noir: #0a0a0a;
     --noir-doux: #141414;
@@ -19,9 +19,9 @@
     --gris-moyen: #2a2a2a;
     --texte-secondaire: #888;
   }
-
+ 
   html { scroll-behavior: smooth; }
-
+ 
   body {
     background: var(--noir);
     color: var(--blanc-casse);
@@ -30,7 +30,7 @@
     line-height: 1.7;
     overflow-x: hidden;
   }
-
+ 
   /* NAV */
   nav {
     position: fixed;
@@ -45,7 +45,7 @@
     border-bottom: 1px solid rgba(201,168,76,0.2);
     transition: padding 0.3s;
   }
-
+ 
   .logo {
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.6rem;
@@ -55,13 +55,13 @@
     text-transform: uppercase;
     text-decoration: none;
   }
-
+ 
   .nav-links {
     display: flex;
     gap: 2.5rem;
     list-style: none;
   }
-
+ 
   .nav-links a {
     color: var(--blanc-casse);
     text-decoration: none;
@@ -71,9 +71,9 @@
     opacity: 0.8;
     transition: color 0.3s, opacity 0.3s;
   }
-
+ 
   .nav-links a:hover { color: var(--or); opacity: 1; }
-
+ 
   .nav-reservation {
     border: 1px solid var(--or);
     color: var(--or);
@@ -87,12 +87,12 @@
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
   }
-
+ 
   .nav-reservation:hover {
     background: var(--or);
     color: var(--noir);
   }
-
+ 
   /* HERO */
   .hero {
     height: 100vh;
@@ -107,21 +107,21 @@
     background: var(--noir);
     overflow: hidden;
   }
-
+ 
   .hero::before {
     content: '';
     position: absolute;
     inset: 0;
     background: radial-gradient(ellipse 60% 50% at 50% 60%, rgba(201,168,76,0.06) 0%, transparent 70%);
   }
-
+ 
   .hero-ornement {
     width: 60px;
     height: 1px;
     background: var(--or);
     margin: 0 auto 2rem;
   }
-
+ 
   .hero-surtitre {
     font-size: 0.7rem;
     letter-spacing: 0.4em;
@@ -129,7 +129,7 @@
     color: var(--or);
     margin-bottom: 1.5rem;
   }
-
+ 
   .hero-titre {
     font-family: 'Cormorant Garamond', serif;
     font-size: clamp(3rem, 8vw, 6rem);
@@ -139,12 +139,12 @@
     margin-bottom: 1rem;
     letter-spacing: 0.02em;
   }
-
+ 
   .hero-titre em {
     font-style: italic;
     color: var(--or-clair);
   }
-
+ 
   .hero-sous-titre {
     font-size: 0.8rem;
     letter-spacing: 0.25em;
@@ -152,16 +152,16 @@
     margin-bottom: 3rem;
     text-transform: uppercase;
   }
-
+ 
   .hero-ctas {
     display: flex;
     gap: 1.5rem;
     justify-content: center;
     flex-wrap: wrap;
   }
-
+ 
   .hero-content { position: relative; z-index: 1; }
-
+ 
   .scroll-indicator {
     position: absolute;
     bottom: 2.5rem;
@@ -172,19 +172,19 @@
     align-items: center;
     gap: 0.5rem;
   }
-
+ 
   .scroll-line {
     width: 1px;
     height: 40px;
     background: linear-gradient(to bottom, var(--or), transparent);
     animation: scrollPulse 2s ease-in-out infinite;
   }
-
+ 
   @keyframes scrollPulse {
     0%, 100% { opacity: 0.3; }
     50% { opacity: 1; }
   }
-
+ 
   /* BOUTONS */
   .btn-or {
     background: var(--or);
@@ -201,9 +201,9 @@
     text-decoration: none;
     display: inline-block;
   }
-
+ 
   .btn-or:hover { background: var(--or-clair); }
-
+ 
   .btn-contour {
     background: transparent;
     color: var(--blanc-casse);
@@ -218,9 +218,9 @@
     text-decoration: none;
     display: inline-block;
   }
-
+ 
   .btn-contour:hover { border-color: var(--or); color: var(--or); }
-
+ 
   /* PHOTO PLACEHOLDER */
   .photo-placeholder {
     background: var(--gris-sombre);
@@ -235,16 +235,16 @@
     letter-spacing: 0.15em;
     text-transform: uppercase;
   }
-
+ 
   .photo-icon { font-size: 2rem; opacity: 0.4; }
-
+ 
   /* SECTIONS */
   .section-wrapper {
     padding: 7rem 4rem;
     max-width: 1200px;
     margin: 0 auto;
   }
-
+ 
   .section-label {
     font-size: 0.65rem;
     letter-spacing: 0.35em;
@@ -252,7 +252,7 @@
     color: var(--or);
     margin-bottom: 1rem;
   }
-
+ 
   .section-titre {
     font-family: 'Cormorant Garamond', serif;
     font-size: clamp(2rem, 4vw, 3.2rem);
@@ -261,14 +261,14 @@
     color: var(--blanc-casse);
     margin-bottom: 1.5rem;
   }
-
+ 
   .separateur {
     width: 50px;
     height: 1px;
     background: var(--or);
     margin-bottom: 2.5rem;
   }
-
+ 
   /* ABOUT */
   .about-grid {
     display: grid;
@@ -276,37 +276,37 @@
     gap: 5rem;
     align-items: center;
   }
-
+ 
   .about-texte p {
     color: var(--texte-secondaire);
     margin-bottom: 1.2rem;
     font-size: 0.9rem;
     line-height: 1.9;
   }
-
+ 
   .about-photo { height: 480px; }
-
+ 
   /* MENU */
   .menu-bg {
     background: var(--gris-sombre);
     padding: 7rem 0;
   }
-
+ 
   .menu-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     margin-top: 3rem;
   }
-
+ 
   .menu-card {
     border: 1px solid rgba(201,168,76,0.15);
     padding: 2rem;
     transition: border-color 0.3s;
   }
-
+ 
   .menu-card:hover { border-color: rgba(201,168,76,0.5); }
-
+ 
   .menu-categorie {
     font-size: 0.6rem;
     letter-spacing: 0.3em;
@@ -316,7 +316,7 @@
     padding-bottom: 1rem;
     border-bottom: 1px solid rgba(201,168,76,0.2);
   }
-
+ 
   .menu-item {
     display: flex;
     justify-content: space-between;
@@ -325,16 +325,16 @@
     border-bottom: 1px solid rgba(255,255,255,0.05);
     gap: 1rem;
   }
-
+ 
   .menu-item:last-child { border-bottom: none; }
-
+ 
   .menu-plat { font-size: 0.88rem; margin-bottom: 0.2rem; }
-
+ 
   .menu-desc {
     font-size: 0.72rem;
     color: var(--texte-secondaire);
   }
-
+ 
   .menu-prix {
     color: var(--or);
     font-family: 'Cormorant Garamond', serif;
@@ -342,7 +342,7 @@
     white-space: nowrap;
     flex-shrink: 0;
   }
-
+ 
   /* GALERIE */
   .galerie-grid {
     display: grid;
@@ -351,35 +351,35 @@
     gap: 1rem;
     margin-top: 3rem;
   }
-
+ 
   .galerie-grid .photo-placeholder:nth-child(1) { grid-column: span 2; }
   .galerie-grid .photo-placeholder:nth-child(4) { grid-column: span 2; }
-
+ 
   /* TÉMOIGNAGES */
   .temoignages-bg {
     background: var(--gris-sombre);
     padding: 7rem 0;
   }
-
+ 
   .temoignages-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     margin-top: 3rem;
   }
-
+ 
   .temoignage-card {
     padding: 2rem;
     border-left: 2px solid var(--or);
   }
-
+ 
   .temoignage-etoiles {
     color: var(--or);
     letter-spacing: 0.15em;
     margin-bottom: 1rem;
     font-size: 0.85rem;
   }
-
+ 
   .temoignage-texte {
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.05rem;
@@ -388,14 +388,14 @@
     color: var(--or-pale);
     margin-bottom: 1.5rem;
   }
-
+ 
   .temoignage-auteur {
     font-size: 0.72rem;
     letter-spacing: 0.15em;
     text-transform: uppercase;
     color: var(--texte-secondaire);
   }
-
+ 
   /* RÉSERVATION */
   .reservation-bg {
     background: var(--noir);
@@ -404,7 +404,7 @@
     position: relative;
     overflow: hidden;
   }
-
+ 
   .reservation-bg::before {
     content: '';
     position: absolute;
@@ -414,7 +414,7 @@
     border: 1px solid rgba(201,168,76,0.06);
     border-radius: 50%;
   }
-
+ 
   .reservation-bg::after {
     content: '';
     position: absolute;
@@ -424,9 +424,9 @@
     border: 1px solid rgba(201,168,76,0.03);
     border-radius: 50%;
   }
-
+ 
   .reservation-inner { position: relative; z-index: 1; }
-
+ 
   .reservation-desc {
     color: var(--texte-secondaire);
     font-size: 0.88rem;
@@ -435,14 +435,14 @@
     margin-left: auto;
     margin-right: auto;
   }
-
+ 
   .ctas-group {
     display: flex;
     gap: 1rem;
     justify-content: center;
     flex-wrap: wrap;
   }
-
+ 
   .horaires {
     display: flex;
     justify-content: center;
@@ -451,9 +451,9 @@
     padding-top: 3rem;
     border-top: 1px solid rgba(201,168,76,0.15);
   }
-
+ 
   .horaire-item { text-align: center; }
-
+ 
   .horaire-jour {
     font-size: 0.65rem;
     letter-spacing: 0.2em;
@@ -461,25 +461,25 @@
     color: var(--or);
     margin-bottom: 0.6rem;
   }
-
+ 
   .horaire-heure {
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.1rem;
     color: var(--blanc-casse);
     line-height: 1.8;
   }
-
+ 
   .horaire-ferme {
     font-size: 0.8rem;
     color: var(--texte-secondaire);
   }
-
+ 
   .horaires-sep {
     width: 1px;
     background: rgba(201,168,76,0.2);
     align-self: stretch;
   }
-
+ 
   /* ÉVÉNEMENTS */
   .evenements-grid {
     display: grid;
@@ -487,7 +487,7 @@
     gap: 2rem;
     margin-top: 3rem;
   }
-
+ 
   .evenement-card {
     display: grid;
     grid-template-columns: 120px 1fr;
@@ -496,9 +496,9 @@
     padding: 1.5rem;
     transition: border-color 0.3s;
   }
-
+ 
   .evenement-card:hover { border-color: rgba(201,168,76,0.4); }
-
+ 
   .evenement-date {
     display: flex;
     flex-direction: column;
@@ -507,39 +507,39 @@
     border-right: 1px solid rgba(201,168,76,0.2);
     padding-right: 1.5rem;
   }
-
+ 
   .evenement-jour {
     font-family: 'Cormorant Garamond', serif;
     font-size: 2.5rem;
     color: var(--or);
     line-height: 1;
   }
-
+ 
   .evenement-mois {
     font-size: 0.65rem;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--texte-secondaire);
   }
-
+ 
   .evenement-titre {
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.3rem;
     margin-bottom: 0.5rem;
   }
-
+ 
   .evenement-desc {
     font-size: 0.8rem;
     color: var(--texte-secondaire);
   }
-
+ 
   /* FOOTER */
   footer {
     background: #050505;
     padding: 5rem 4rem 3rem;
     border-top: 1px solid rgba(201,168,76,0.15);
   }
-
+ 
   .footer-grid {
     max-width: 1200px;
     margin: 0 auto;
@@ -548,7 +548,7 @@
     gap: 4rem;
     margin-bottom: 3rem;
   }
-
+ 
   .footer-logo {
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.5rem;
@@ -558,14 +558,14 @@
     margin-bottom: 1.2rem;
     display: block;
   }
-
+ 
   .footer-texte {
     font-size: 0.78rem;
     color: var(--texte-secondaire);
     line-height: 1.9;
     margin-bottom: 1.5rem;
   }
-
+ 
   .footer-titre {
     font-size: 0.62rem;
     letter-spacing: 0.28em;
@@ -573,21 +573,21 @@
     color: var(--or);
     margin-bottom: 1.2rem;
   }
-
+ 
   .footer-info {
     font-size: 0.82rem;
     color: var(--texte-secondaire);
     line-height: 2.2;
   }
-
+ 
   .footer-info a {
     color: var(--texte-secondaire);
     text-decoration: none;
     transition: color 0.3s;
   }
-
+ 
   .footer-info a:hover { color: var(--or); }
-
+ 
   .footer-bas {
     max-width: 1200px;
     margin: 0 auto;
@@ -598,7 +598,7 @@
     font-size: 0.7rem;
     color: rgba(136,136,136,0.4);
   }
-
+ 
   /* RESPONSIVE */
   @media (max-width: 900px) {
     nav { padding: 1.2rem 2rem; }
@@ -621,7 +621,7 @@
 </style>
 </head>
 <body>
-
+ 
 <!-- NAVIGATION -->
 <nav id="navbar">
   <a href="#" class="logo">L'Ardoise</a>
@@ -634,7 +634,7 @@
   </ul>
   <a href="tel:0549989028" class="nav-reservation">Réserver</a>
 </nav>
-
+ 
 <!-- HERO -->
 <section class="hero" id="accueil">
   <div class="hero-content">
@@ -654,7 +654,7 @@
     <div class="scroll-line"></div>
   </div>
 </section>
-
+ 
 <!-- À PROPOS -->
 <div id="about">
   <div class="section-wrapper">
@@ -664,7 +664,7 @@
         <h2 class="section-titre">Un lieu où la tradition<br>rencontre l'élégance</h2>
         <div class="separateur"></div>
         <p>Niché au cœur de Loudun, L'Ardoise est bien plus qu'un restaurant. C'est un espace de partage où chaque plat raconte une histoire, où chaque repas devient un souvenir.</p>
-        <p>Nous travaillons avec les producteurs locaux du Loudunais et de la Vienne pour vous offrir une cuisine de saison, sincère et généreuse.</p>
+        <p>Nous travaillons en direct avec nos producteurs locaux : légumes d'une exploitation loudunaise, viande de Dissay, champignons de Bernazay. Une cuisine de saison, sincère et généreuse, ancrée dans le terroir de la Vienne.</p>
         <p>Notre équipe passionnée met tout son savoir-faire au service de votre plaisir, dans un cadre chaleureux et élégant où il fait bon s'attarder.</p>
         <a href="#contact" class="btn-contour" style="margin-top:2rem;">Nous contacter</a>
       </div>
@@ -675,125 +675,151 @@
     </div>
   </div>
 </div>
-
+ 
 <!-- MENU -->
 <div class="menu-bg" id="menu">
   <div class="section-wrapper">
     <p class="section-label">Notre carte</p>
     <h2 class="section-titre">Les incontournables<br>de la saison</h2>
     <div class="separateur"></div>
-
+ 
+    <!-- Formules -->
+    <div style="display:flex; gap:1.5rem; margin-bottom:3rem; flex-wrap:wrap;">
+      <div style="border:1px solid rgba(201,168,76,0.3); padding:1rem 1.5rem; text-align:center; flex:1; min-width:180px;">
+        <p style="font-size:0.6rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--or); margin-bottom:0.4rem;">Plat direct</p>
+        <p style="font-family:'Cormorant Garamond',serif; font-size:1.4rem; color:var(--blanc-casse);">18,80€</p>
+      </div>
+      <div style="border:1px solid rgba(201,168,76,0.5); padding:1rem 1.5rem; text-align:center; flex:1; min-width:180px; background:rgba(201,168,76,0.05);">
+        <p style="font-size:0.6rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--or); margin-bottom:0.4rem;">Entrée + Plat ou Plat + Dessert</p>
+        <p style="font-family:'Cormorant Garamond',serif; font-size:1.4rem; color:var(--blanc-casse);">23,80€</p>
+      </div>
+      <div style="border:1px solid rgba(201,168,76,0.3); padding:1rem 1.5rem; text-align:center; flex:1; min-width:180px; background:rgba(201,168,76,0.08);">
+        <p style="font-size:0.6rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--or); margin-bottom:0.4rem;">Entrée + Plat + Dessert</p>
+        <p style="font-family:'Cormorant Garamond',serif; font-size:1.4rem; color:var(--blanc-casse);">27,80€</p>
+      </div>
+      <div style="border:1px solid rgba(201,168,76,0.3); padding:1rem 1.5rem; text-align:center; flex:1; min-width:180px;">
+        <p style="font-size:0.6rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--or); margin-bottom:0.4rem;">Dessert direct</p>
+        <p style="font-family:'Cormorant Garamond',serif; font-size:1.4rem; color:var(--blanc-casse);">7,50€</p>
+      </div>
+    </div>
+ 
     <div class="menu-grid">
       <div class="menu-card">
         <p class="menu-categorie">Entrées</p>
         <div class="menu-item">
           <div>
-            <p class="menu-plat">Terrine de campagne maison</p>
-            <p class="menu-desc">Pickles, pain de campagne grillé</p>
+            <p class="menu-plat">Cassolette d'Escargots</p>
+            <p class="menu-desc">Poêlée de champignons, lardons, échalotes et crème d'ail</p>
           </div>
-          <span class="menu-prix">12€</span>
         </div>
         <div class="menu-item">
           <div>
-            <p class="menu-plat">Velouté de butternut</p>
-            <p class="menu-desc">Crème fraîche, noisettes torréfiées</p>
+            <p class="menu-plat">Profiteroles de chèvre</p>
+            <p class="menu-desc">Choux garnis de fromage de chèvre, chips de bacon croustillantes</p>
           </div>
-          <span class="menu-prix">10€</span>
         </div>
         <div class="menu-item">
           <div>
-            <p class="menu-plat">Salade de chèvre chaud</p>
-            <p class="menu-desc">Miel du Loudunais, noix, mesclun</p>
+            <p class="menu-plat">Vol-au-vent de noix de pétoncles</p>
+            <p class="menu-desc">Noix de pétoncles délicates, fondue de poireaux</p>
           </div>
-          <span class="menu-prix">11€</span>
         </div>
         <div class="menu-item">
           <div>
-            <p class="menu-plat">Carpaccio de Saint-Jacques</p>
-            <p class="menu-desc">Huile de truffe, fleur de sel, citron vert</p>
+            <p class="menu-plat">Tarte aux oignons, feta et noix</p>
+            <p class="menu-desc">Tarte croustillante aux oignons fondants, feta et croquant des noix</p>
           </div>
-          <span class="menu-prix">16€</span>
         </div>
       </div>
-
+ 
       <div class="menu-card">
         <p class="menu-categorie">Plats</p>
         <div class="menu-item">
           <div>
-            <p class="menu-plat">Magret de canard rôti</p>
-            <p class="menu-desc">Jus au miel de lavande, légumes de saison</p>
+            <p class="menu-plat">Filet de bar sauce à l'oseille</p>
+            <p class="menu-desc">Filet de bar nappé d'une sauce à l'oseille légèrement acidulée</p>
           </div>
-          <span class="menu-prix">24€</span>
         </div>
         <div class="menu-item">
           <div>
-            <p class="menu-plat">Filet de sandre poêlé</p>
-            <p class="menu-desc">Beurre blanc, pommes de terre fondantes</p>
+            <p class="menu-plat">Poisson du marché</p>
+            <p class="menu-desc">Selon l'arrivage du jour, préparé selon l'inspiration du chef</p>
           </div>
-          <span class="menu-prix">22€</span>
         </div>
         <div class="menu-item">
           <div>
-            <p class="menu-plat">Parmentier de joue de bœuf</p>
-            <p class="menu-desc">Confit 7 heures, purée truffée</p>
+            <p class="menu-plat">Joue de bœuf mijotée</p>
+            <p class="menu-desc">Longuement cuite, fondante, champignons savoureux</p>
           </div>
-          <span class="menu-prix">21€</span>
         </div>
         <div class="menu-item">
           <div>
-            <p class="menu-plat">Risotto aux cèpes</p>
-            <p class="menu-desc">Parmesan affiné, huile de persil</p>
+            <p class="menu-plat">Entrecôte VBF sauce poivre</p>
+            <p class="menu-desc">Belle pièce de bœuf grillée, sauce poivre intense <span style="color:var(--or);">+5€</span></p>
           </div>
-          <span class="menu-prix">19€</span>
+        </div>
+        <div class="menu-item">
+          <div>
+            <p class="menu-plat">Cuisse de canette à l'orange</p>
+            <p class="menu-desc">Canette rôtie, sauce à l'orange douce et parfumée</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div>
+            <p class="menu-plat">Jarret de porc à la provençale</p>
+            <p class="menu-desc">Cuisson lente de 7 heures, viande tendre aux saveurs du sud</p>
+          </div>
         </div>
       </div>
-
+ 
       <div class="menu-card">
         <p class="menu-categorie">Desserts</p>
         <div class="menu-item">
           <div>
-            <p class="menu-plat">Crème brûlée à la vanille</p>
-            <p class="menu-desc">Vanille de Madagascar</p>
+            <p class="menu-plat">Moelleux chocolat rose et framboises</p>
+            <p class="menu-desc">Cœur fondant au chocolat, accompagné de framboises</p>
           </div>
-          <span class="menu-prix">8€</span>
         </div>
         <div class="menu-item">
           <div>
-            <p class="menu-plat">Tarte tatin revisitée</p>
-            <p class="menu-desc">Pommes du Loudunais, caramel beurre salé</p>
+            <p class="menu-plat">Déclinaison de crèmes brûlées</p>
+            <p class="menu-desc">Assortiment de crèmes brûlées aux saveurs variées</p>
           </div>
-          <span class="menu-prix">9€</span>
         </div>
         <div class="menu-item">
           <div>
-            <p class="menu-plat">Moelleux au chocolat</p>
-            <p class="menu-desc">Cœur coulant, glace vanille maison</p>
+            <p class="menu-plat">Pommes caramélisées</p>
+            <p class="menu-desc">Pommes fondantes, mousse au caramel beurre salé</p>
           </div>
-          <span class="menu-prix">9€</span>
         </div>
         <div class="menu-item">
           <div>
-            <p class="menu-plat">Assiette de fromages affinés</p>
-            <p class="menu-desc">Sélection du terroir, confiture maison</p>
+            <p class="menu-plat">Assiette de Fromages</p>
+            <p class="menu-desc">Sélection de fromages affinés</p>
           </div>
-          <span class="menu-prix">10€</span>
+        </div>
+        <div class="menu-item">
+          <div>
+            <p class="menu-plat">Menu Enfant</p>
+            <p class="menu-desc">Poisson du marché ou tenders ou steak haché + glace <span style="color:var(--or);">9€</span></p>
+          </div>
         </div>
       </div>
     </div>
-
+ 
     <div style="text-align:center; margin-top:3rem;">
       <a href="tel:0549989028" class="btn-or">Réserver pour déguster</a>
     </div>
   </div>
 </div>
-
+ 
 <!-- GALERIE -->
 <div id="galerie">
   <div class="section-wrapper">
     <p class="section-label">Galerie</p>
     <h2 class="section-titre">L'ambiance de L'Ardoise</h2>
     <div class="separateur"></div>
-
+ 
     <div class="galerie-grid">
       <div class="photo-placeholder">
         <span class="photo-icon">📷</span>
@@ -818,14 +844,14 @@
     </div>
   </div>
 </div>
-
+ 
 <!-- TÉMOIGNAGES -->
 <div class="temoignages-bg">
   <div class="section-wrapper">
     <p class="section-label">Témoignages</p>
     <h2 class="section-titre">Ce que nos clients disent</h2>
     <div class="separateur"></div>
-
+ 
     <div class="temoignages-grid">
       <div class="temoignage-card">
         <p class="temoignage-etoiles">★★★★★</p>
@@ -845,59 +871,59 @@
     </div>
   </div>
 </div>
-
+ 
 <!-- ÉVÉNEMENTS -->
 <div id="evenements">
   <div class="section-wrapper">
     <p class="section-label">Événements</p>
     <h2 class="section-titre">Moments d'exception<br>à L'Ardoise</h2>
     <div class="separateur"></div>
-
+ 
     <div class="evenements-grid">
       <div class="evenement-card">
         <div class="evenement-date">
-          <span class="evenement-jour">14</span>
-          <span class="evenement-mois">Juin</span>
+          <span class="evenement-jour">🎤</span>
+          <span class="evenement-mois">Vendredi</span>
         </div>
         <div>
-          <p class="evenement-titre">Soirée accord mets & vins</p>
-          <p class="evenement-desc">Une sélection de vins de la Vienne en harmonie avec notre carte. Sur réservation uniquement.</p>
+          <p class="evenement-titre">Soirée Karaoké</p>
+          <p class="evenement-desc">Tous les 15 jours, ambiance festive et conviviale. Idéal pour célébrer un anniversaire ou passer une soirée entre amis.</p>
         </div>
       </div>
       <div class="evenement-card">
         <div class="evenement-date">
-          <span class="evenement-jour">21</span>
-          <span class="evenement-mois">Juin</span>
+          <span class="evenement-jour">🕺</span>
+          <span class="evenement-mois">Samedi</span>
         </div>
         <div>
-          <p class="evenement-titre">Menu spécial Fête de la Musique</p>
-          <p class="evenement-desc">Soirée festive en terrasse avec animations musicales et menu dégustation.</p>
+          <p class="evenement-titre">Soirée Années 80</p>
+          <p class="evenement-desc">Musique rétro, piste de danse et dîner gourmand. Replongez dans l'ambiance des années 80.</p>
         </div>
       </div>
       <div class="evenement-card">
         <div class="evenement-date">
-          <span class="evenement-jour">05</span>
-          <span class="evenement-mois">Juil</span>
+          <span class="evenement-jour">🍷</span>
+          <span class="evenement-mois">Dimanche</span>
         </div>
         <div>
-          <p class="evenement-titre">Brunch dominical</p>
-          <p class="evenement-desc">Un brunch généreux avec produits du terroir local, chaque premier dimanche du mois.</p>
+          <p class="evenement-titre">Dimanche Guinguette</p>
+          <p class="evenement-desc">Le dimanche midi et après-midi, musique, convivialité et cuisine française traditionnelle en plein cœur de Loudun.</p>
         </div>
       </div>
       <div class="evenement-card">
         <div class="evenement-date">
           <span class="evenement-jour">—</span>
-          <span class="evenement-mois">Toute l'année</span>
+          <span class="evenement-mois">Sur mesure</span>
         </div>
         <div>
           <p class="evenement-titre">Privatisation & événements</p>
-          <p class="evenement-desc">Mariages, baptêmes, séminaires... Nous organisons vos événements privés sur mesure.</p>
+          <p class="evenement-desc">Anniversaires, mariages, karaoké, repas d'entreprise... Nous organisons vos événements privés et professionnels sur mesure.</p>
         </div>
       </div>
     </div>
   </div>
 </div>
-
+ 
 <!-- RÉSERVATION -->
 <div class="reservation-bg" id="contact">
   <div class="reservation-inner">
@@ -908,28 +934,46 @@
       <a href="tel:0549989028" class="btn-or">05 49 98 90 28</a>
       <a href="mailto:ardoise.loudun@gmail.com" class="btn-contour">Écrire par email</a>
     </div>
-
+ 
     <div class="horaires">
       <div class="horaire-item">
-        <p class="horaire-jour">Mardi – Vendredi</p>
-        <p class="horaire-heure">12h00 – 14h00</p>
-        <p class="horaire-heure">19h00 – 22h00</p>
+        <p class="horaire-jour">Mardi</p>
+        <p class="horaire-heure">10h00 – 14h00</p>
+        <p class="horaire-heure">18h30 – 22h00</p>
+      </div>
+      <div class="horaires-sep"></div>
+      <div class="horaire-item">
+        <p class="horaire-jour">Mercredi</p>
+        <p class="horaire-heure">10h00 – 14h30</p>
+        <p class="horaire-heure horaire-ferme">Fermé le soir</p>
+      </div>
+      <div class="horaires-sep"></div>
+      <div class="horaire-item">
+        <p class="horaire-jour">Jeudi – Vendredi</p>
+        <p class="horaire-heure">10h00 – 14h30</p>
+        <p class="horaire-heure">18h30 – 22h00</p>
       </div>
       <div class="horaires-sep"></div>
       <div class="horaire-item">
         <p class="horaire-jour">Samedi</p>
-        <p class="horaire-heure">12h00 – 14h30</p>
-        <p class="horaire-heure">19h00 – 22h30</p>
+        <p class="horaire-heure">10h00 – 14h30</p>
+        <p class="horaire-heure">18h30 – 22h30</p>
       </div>
       <div class="horaires-sep"></div>
       <div class="horaire-item">
-        <p class="horaire-jour">Dimanche & Lundi</p>
+        <p class="horaire-jour">Dimanche</p>
+        <p class="horaire-heure">10h00 – 14h30</p>
+        <p class="horaire-heure horaire-ferme">Fermé le soir</p>
+      </div>
+      <div class="horaires-sep"></div>
+      <div class="horaire-item">
+        <p class="horaire-jour">Lundi</p>
         <p class="horaire-heure horaire-ferme">Fermé</p>
       </div>
     </div>
   </div>
 </div>
-
+ 
 <!-- FOOTER -->
 <footer>
   <div class="footer-grid">
@@ -963,8 +1007,9 @@
     <span>Mentions légales · Politique de confidentialité</span>
   </div>
 </footer>
-
+ 
 <script>
+  // Nav scroll effect
   const navbar = document.getElementById('navbar');
   window.addEventListener('scroll', () => {
     if (window.scrollY > 50) {
@@ -973,7 +1018,8 @@
       navbar.style.padding = '1.5rem 4rem';
     }
   });
-
+ 
+  // Smooth scroll for anchor links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
       e.preventDefault();
@@ -984,6 +1030,6 @@
     });
   });
 </script>
-
+ 
 </body>
 </html>
